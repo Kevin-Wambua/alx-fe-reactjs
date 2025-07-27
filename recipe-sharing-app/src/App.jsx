@@ -4,6 +4,17 @@ import AddRecipeForm from './components/AddRecipeForm';
 import RecipeList from './components/RecipeList';
 import RecipeDetails from './components/RecipeDetails';
 import SearchBar from './components/SearchBar';
+import FavoritesList from './components/FavoritesList';
+import RecommendationsList from './components/RecommendationsList';
+
+<Route path="/" element={
+  <>
+    <AddRecipeForm />
+    <RecipeList />
+    <FavoritesList />
+    <RecommendationsList />
+  </>
+} />
 
 const App = () => (
   <div style={{ maxWidth: 600, margin: 'auto', padding: 20 }}>
